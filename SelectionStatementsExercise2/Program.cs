@@ -4,20 +4,21 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, Which one of the following classes are your favorite?" +
-                " Math, Science, Gym, Art, or Coding");
+            Console.WriteLine("Hello, Which one of the following classes are your favorite?");
 
             string favClass = Console.ReadLine();
 
             switch (favClass.ToLower())
             {
                 case "math":
-                    Console.WriteLine("Thats crazy math is way to hard!!!");
+                case "mathmatics"
+:                    Console.WriteLine("Thats crazy math is way to hard!!!");
                     break;
                 case "science":
                     Console.WriteLine("I always thought science was pretty cool too!!!");
                     break;
                 case "gym":
+                case "p.e":
                     Console.WriteLine("I think we would get along!!!");
                     break;
                 case "art":
@@ -25,6 +26,9 @@
                     break;
                 case "coding":
                     Console.WriteLine("NERD!!!!!!!!!");
+                    break;
+                default:
+                        Console.Write("that was fun too");
                     break;
             }
         }
